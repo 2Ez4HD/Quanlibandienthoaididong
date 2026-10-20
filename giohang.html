@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ Hàng - N1 Mobile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+<link rel="icon" type="image/png" href="logo.png?v=2" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="giohang.css" />
+  </head>
+  <body>
+    <div class="thong-bao-chay">
+      <div class="khung-thong-bao">
+        <div class="noi-dung-chay">
+          <div class="nhom-thong-bao">
+            <span
+              ><i class="fa-solid fa-tag"></i> Thu cũ giá ngon - Lên đời tiết
+              kiệm</span
+            >
+            <b>•</b>
+            <span
+              ><i class="fa-solid fa-certificate"></i> Sản phẩm chính hãng -
+              Xuất VAT đầy đủ</span
+            >
+            <b>•</b>
+            <span
+              ><i class="fa-solid fa-truck-fast"></i> Giao nhanh - Miễn phí cho
+              đơn từ 500K</span
+            >
+            <b>•</b>
+            <span
+              ><i class="fa-solid fa-gift"></i> Nhiều ưu đãi hấp dẫn mỗi
+              ngày</span
+            >
+            <b>•</b>
+          </div>
+          <div class="nhom-thong-bao">
+            <span
+              ><i class="fa-solid fa-tag"></i> Thu cũ giá ngon - Lên đời tiết
+              kiệm</span
+            >
+            <b>•</b>
+            <span
+              ><i class="fa-solid fa-certificate"></i> Sản phẩm chính hãng -
+              Xuất VAT đầy đủ</span
+            >
+            <b>•</b>
+            <span
+              ><i class="fa-solid fa-truck-fast"></i> Giao nhanh - Miễn phí cho
+              đơn từ 500K</span
+            >
+            <b>•</b>
+            <span
+              ><i class="fa-solid fa-gift"></i> Nhiều ưu đãi hấp dẫn mỗi
+              ngày</span
+            >
+            <b>•</b>
+          </div>
+          <div class="nhom-thong-bao">
+            <span
+              ><i class="fa-solid fa-tag"></i> Thu cũ giá ngon - Lên đời tiết
+              kiệm</span
+            >
+            <b>•</b>
+            <span
+              ><i class="fa-solid fa-certificate"></i> Sản phẩm chính hãng -
+              Xuất VAT đầy đủ</span
+            >
+            <b>•</b>
+            <span
+              ><i class="fa-solid fa-truck-fast"></i> Giao nhanh - Miễn phí cho
+              đơn từ 500K</span
+            >
+            <b>•</b>
+            <span
+              ><i class="fa-solid fa-gift"></i> Nhiều ưu đãi hấp dẫn mỗi
+              ngày</span
+            >
+            <b>•</b>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="thanh-menu-chinh">
+      <nav class="khung-dieu-huong">
+        <a href="index.html" class="logo">
+          <img
+            src="logo.png"
+            alt="N1 Mobile"
+            title="N1 Mobile - Hệ thống bán lẻ điện thoại di động chính hãng"
+          />
+        </a>
+        
+                 <ul class="danh-sach-menu">
+          <li class="muc-menu">
+            <a href="danhmuc.html">
+              <i class="fa-solid fa-store"></i>
+              <span>Cửa hàng</span>
+            </a>
+          </li>
+
+          <li class="muc-menu">
+            <a href="index.html#khuyen-mai" class="khuyen-mai">
+              <i class="fa-solid fa-bolt"></i>
+              <span>Khuyến mãi</span>
+            </a>
+          </li>
+        </ul>
+        <div class="cum-ben-phai">
+          <div class="khung-tim-kiem">
+            <div class="o-tim-kiem">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                id="o-tim-kiem-input"
+                placeholder="Bạn muốn mua gì hôm nay?"
+                autocomplete="off"
+              />
+              <button
+                type="button"
+                class="nut-xoa-tim"
+                id="nut-xoa-tim"
+                title="Xóa"
+                aria-label="Xóa tìm kiếm"
+                hidden
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="hop-goi-y" id="hop-goi-y" hidden></div>
+          </div>
+          <button
+            type="button"
+            class="icon-chuc-nang nut-giao-dien"
+            id="nut-giao-dien"
+            title="Chế độ sáng/tối"
+            aria-label="Chuyển chế độ sáng tối"
+          >
+            <i class="fa-solid fa-sun" id="icon-giao-dien"></i>
+          </button>
+          <a href="giohang.html" class="icon-chuc-nang" title="Giỏ hàng">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="so-luong" id="badge-gio-hang">0</span>
+          </a>
+          <a href="taikhoan.html" class="icon-chuc-nang" title="Tài khoản">
+            <i class="fa-regular fa-circle-user"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="thanh-stepper">
+      <div class="buoc-stepper dang-hien-tai" data-step="1">
+        <span class="so-buoc">1</span>
+        <span class="ten-buoc">Giỏ hàng</span>
+      </div>
+      <div class="gach-noi"></div>
+      <div class="buoc-stepper" data-step="2">
+        <span class="so-buoc">2</span>
+        <span class="ten-buoc">Thông tin giao hàng</span>
+      </div>
+      <div class="gach-noi"></div>
+      <div class="buoc-stepper" data-step="3">
+        <span class="so-buoc">3</span>
+        <span class="ten-buoc">Hoàn tất</span>
+      </div>
+    </div>
+
+    <main class="trang-gio-hang">
+      <h1 class="tieu-de-gio-hang">
+        <i class="fa-solid fa-bag-shopping"></i>
+        Giỏ Hàng Của Bạn
+        <span class="so-mon" id="so-mon-gio">(0 sản phẩm)</span>
+      </h1>
+
+      <div id="khu-vuc-gio">
+        <div class="bo-cuc-gio-hang">
+          <section class="cot-danh-sach" aria-label="Danh sách sản phẩm">
+            <div class="thanh-chon-tat-ca">
+              <label class="o-checkbox">
+                <input type="checkbox" id="chon-tat-ca" checked />
+                <span class="dau-check"><i class="fa-solid fa-check"></i></span>
+                <span>Chọn tất cả (<b id="tong-so-chon">0</b>)</span>
+              </label>
+              <button type="button" class="nut-xoa-da-chon" id="xoa-da-chon">
+                <i class="fa-regular fa-trash-can"></i> Xóa mục đã chọn
+              </button>
+            </div>
+
+            <div class="danh-sach-san-pham" id="danh-sach-san-pham"></div>
+
+            <div class="gio-trong" id="gio-trong" hidden>
+              <i class="fa-solid fa-cart-shopping"></i>
+              <h2>Giỏ hàng của bạn đang trống</h2>
+              <p>Hãy khám phá các sản phẩm công nghệ chính hãng của chúng tôi</p>
+              <a href="danhmuc.html" class="nut-chinh">Tiếp tục mua sắm</a>
+            </div>
+
+            <a href="index.html" class="lien-ket-tiep-tuc">
+              <i class="fa-solid fa-arrow-left"></i> Tiếp tục mua sắm
+            </a>
+          </section>
+
+          <aside class="cot-tom-tat" aria-label="Tóm tắt đơn hàng">
+            <div class="the-tom-tat">
+              <h2>Tóm Tắt Đơn Hàng</h2>
+
+              <div class="khung-voucher">
+                <label for="ma-voucher">
+                  <i class="fa-solid fa-ticket"></i> Mã giảm giá
+                </label>
+                <div class="hang-voucher">
+                  <input
+                    type="text"
+                    id="ma-voucher"
+                    placeholder="Nhập mã..."
+                    autocomplete="off"
+                  />
+                  <button type="button" id="ap-dung-voucher">Áp dụng</button>
+                </div>
+                <p
+                  class="thong-bao-form"
+                  id="thong-bao-voucher"
+                  role="alert"
+                  aria-live="polite"
+                ></p>
+              </div>
+
+              <div class="chi-tiet-tien">
+                <div class="dong-tien">
+                  <span>Tạm tính (<b id="so-luong-tam-tinh">0</b> sản phẩm)</span>
+                  <span id="tam-tinh">0₫</span>
+                </div>
+                <div class="dong-tien">
+                  <span>Giảm giá</span>
+                  <span id="giam-gia" class="mau-giam">-0₫</span>
+                </div>
+                <div class="dong-tien">
+                  <span>Phí vận chuyển</span>
+                  <span id="phi-van-chuyen" class="mau-mien-phi">Miễn phí</span>
+                </div>
+                <div class="dong-tien tong-cong">
+                  <span>Tổng cộng</span>
+                  <span id="tong-cong">0₫</span>
+                </div>
+                <p class="ghi-chu-vat">(Đã bao gồm VAT)</p>
+              </div>
+
+              <button type="button" class="nut-thanh-toan" id="nut-thanh-toan">
+                <i class="fa-solid fa-lock"></i> Tiến hành thanh toán
+              </button>
+
+              <div class="phuong-thuc-thanh-toan">
+                <p>Hỗ trợ thanh toán</p>
+                <div class="danh-sach-pt">
+                  <span><i class="fa-solid fa-money-bill-wave"></i> COD</span>
+                  <span>
+                    <i class="fa-solid fa-building-columns"></i> Chuyển khoản
+                  </span>
+                  <span><i class="fa-solid fa-credit-card"></i> Thẻ</span>
+                  <span><i class="fa-solid fa-wallet"></i> Ví điện tử</span>
+                </div>
+              </div>
+
+              <ul class="chinh-sach">
+                <li>
+                  <i class="fa-solid fa-shield-halved"></i> Bảo hành chính hãng
+                  12 tháng
+                </li>
+                <li>
+                  <i class="fa-solid fa-rotate-left"></i> Đổi trả trong 30 ngày
+                </li>
+                <li>
+                  <i class="fa-solid fa-truck-fast"></i> Miễn phí giao hàng từ
+                  500K
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div id="khu-vuc-buoc-2" hidden>
+        <div class="bo-cuc-gio-hang">
+          <section class="cot-danh-sach" aria-label="Thông tin giao hàng">
+            <div class="the-tom-tat" style="padding: 24px;">
+              <h2 style="margin-top: 0;">Thông Tin Giao Hàng</h2>
+              <form id="form-giao-hang" novalidate>
+                <div class="truong-form">
+                  <label for="ho-ten">Họ và tên <span class="bat-buoc">*</span></label>
+                  <input type="text" id="ho-ten" name="hoTen" placeholder="Nguyễn Văn A" autocomplete="name" />
+                </div>
+                <div class="truong-form">
+                  <label for="sdt-giao">Số điện thoại <span class="bat-buoc">*</span></label>
+                  <input type="tel" id="sdt-giao" name="sdt" placeholder="0912345678" inputmode="numeric" autocomplete="tel" />
+                </div>
+                <div class="truong-form">
+                  <label for="email-giao">Email</label>
+                  <input type="email" id="email-giao" name="email" placeholder="email@example.com" autocomplete="email" />
+                </div>
+                <div class="truong-form">
+                  <label for="dia-chi">Địa chỉ giao hàng <span class="bat-buoc">*</span></label>
+                  <input type="text" id="dia-chi" name="diaChi" placeholder="Số nhà, đường, phường, quận, tỉnh/thành" autocomplete="street-address" />
+                </div>
+                <div class="truong-form">
+                  <label for="ghi-chu">Ghi chú</label>
+                  <input type="text" id="ghi-chu" name="ghiChu" placeholder="Ghi chú cho đơn hàng (không bắt buộc)" />
+                </div>
+                <div class="nhom-nut-form">
+                  <button type="button" class="nut-huy" id="huy-buoc-2">Quay lại giỏ hàng</button>
+                  <button type="submit" class="nut-tiep">Tiếp tục <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </form>
+            </div>
+          </section>
+
+          <aside class="cot-tom-tat" aria-label="Tóm tắt đơn hàng">
+            <div class="the-tom-tat">
+              <h2>Tóm Tắt Đơn Hàng</h2>
+              <div id="danh-sach-sp-buoc-2" class="danh-sach-sp-buoc"></div>
+              <div class="chi-tiet-tien">
+                <div class="dong-tien">
+                  <span>Tạm tính (<b id="so-luong-buoc-2">0</b> sản phẩm)</span>
+                  <span id="tam-tinh-buoc-2">0₫</span>
+                </div>
+                <div class="dong-tien">
+                  <span>Giảm giá</span>
+                  <span id="giam-gia-buoc-2" class="mau-giam">-0₫</span>
+                </div>
+                <div class="dong-tien">
+                  <span>Phí vận chuyển</span>
+                  <span id="phi-van-chuyen-buoc-2" class="mau-mien-phi">Miễn phí</span>
+                </div>
+                <div class="dong-tien tong-cong">
+                  <span>Tổng cộng</span>
+                  <span id="tong-cong-buoc-2">0₫</span>
+                </div>
+                <p class="ghi-chu-vat">(Đã bao gồm VAT)</p>
+              </div>
+              <ul class="chinh-sach">
+                <li><i class="fa-solid fa-shield-halved"></i> Bảo hành chính hãng 12 tháng</li>
+                <li><i class="fa-solid fa-rotate-left"></i> Đổi trả trong 30 ngày</li>
+                <li><i class="fa-solid fa-truck-fast"></i> Miễn phí giao hàng từ 500K</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div id="khu-vuc-buoc-3" hidden>
+        <div class="bo-cuc-gio-hang">
+          <section class="cot-danh-sach" aria-label="Xác nhận đơn hàng">
+            <div class="the-tom-tat" style="padding: 24px;">
+              <h2 style="margin-top: 0;">Xác Nhận Đơn Hàng</h2>
+
+              <div class="khoi-xac-nhan">
+                <h3 class="tieu-de-khoi-xac-nhan"><i class="fa-solid fa-user"></i> Thông tin người nhận</h3>
+                <div class="dong-xac-nhan"><span>Họ tên:</span><b id="tt-ho-ten"></b></div>
+                <div class="dong-xac-nhan"><span>Số điện thoại:</span><b id="tt-sdt"></b></div>
+                <div class="dong-xac-nhan"><span>Email:</span><b id="tt-email"></b></div>
+                <div class="dong-xac-nhan"><span>Địa chỉ:</span><b id="tt-dia-chi"></b></div>
+                <div class="dong-xac-nhan"><span>Ghi chú:</span><b id="tt-ghi-chu"></b></div>
+              </div>
+
+              <div class="khoi-xac-nhan">
+                <h3 class="tieu-de-khoi-xac-nhan"><i class="fa-solid fa-ticket"></i> Mã giảm giá</h3>
+                <div class="dong-xac-nhan"><span>Voucher:</span><b id="tt-voucher">Không áp dụng</b></div>
+              </div>
+
+              <div class="khoi-xac-nhan">
+                <h3 class="tieu-de-khoi-xac-nhan"><i class="fa-solid fa-box-open"></i> Sản phẩm</h3>
+                <div id="danh-sach-sp-buoc-3" class="danh-sach-sp-buoc"></div>
+              </div>
+
+              <div class="nhom-nut-form">
+                <button type="button" class="nut-huy" id="quay-lai-buoc-2">Quay lại</button>
+                <button type="button" class="nut-tiep" id="hoan-tat"><i class="fa-solid fa-check"></i> Hoàn tất đặt hàng</button>
+              </div>
+            </div>
+          </section>
+
+          <aside class="cot-tom-tat" aria-label="Tóm tắt đơn hàng">
+            <div class="the-tom-tat">
+              <h2>Tóm Tắt Đơn Hàng</h2>
+              <div class="chi-tiet-tien">
+                <div class="dong-tien">
+                  <span>Tạm tính (<b id="so-luong-buoc-3">0</b> sản phẩm)</span>
+                  <span id="tam-tinh-buoc-3">0₫</span>
+                </div>
+                <div class="dong-tien">
+                  <span>Giảm giá</span>
+                  <span id="giam-gia-buoc-3" class="mau-giam">-0₫</span>
+                </div>
+                <div class="dong-tien">
+                  <span>Phí vận chuyển</span>
+                  <span id="phi-van-chuyen-buoc-3" class="mau-mien-phi">Miễn phí</span>
+                </div>
+                <div class="dong-tien tong-cong">
+                  <span>Tổng cộng</span>
+                  <span id="tong-cong-buoc-3">0₫</span>
+                </div>
+                <p class="ghi-chu-vat">(Đã bao gồm VAT)</p>
+              </div>
+              <ul class="chinh-sach">
+                <li><i class="fa-solid fa-money-bill-wave"></i> Thanh toán khi nhận hàng (COD)</li>
+                <li><i class="fa-solid fa-shield-halved"></i> Bảo hành chính hãng 12 tháng</li>
+                <li><i class="fa-solid fa-rotate-left"></i> Đổi trả trong 30 ngày</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div id="khu-vuc-hoan-tat" hidden>
+        <div class="hop-form-thanh-toan text-center" style="max-width: 700px;">
+          <i class="fa-solid fa-circle-check icon-thanh-cong"></i>
+          <h2 style="margin-top: 0;">Đặt Hàng Thành Công!</h2>
+          <p style="color: var(--text-sub);">Cảm ơn bạn đã tin tưởng N1 Mobile. Đơn hàng của bạn đang được xử lý.</p>
+          <p>Mã đơn hàng: <b id="ma-don-hang" style="color: #e53935; font-size: 18px;"></b></p>
+          <div class="nhom-nut-form" style="max-width: 360px; margin: 25px auto 0;">
+            <button type="button" class="nut-tiep" id="tiep-tuc-mua-sam">
+              <i class="fa-solid fa-arrow-left"></i> Tiếp tục mua sắm
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <button id="nutLenDauTrang" class="nut-len-dau-trang" title="Lên đầu trang">
+      ⬆
+    </button>
+
+     <footer class="chan-trang">
+      <div class="chan-trang-tren">
+        <div class="khung-chan-trang">
+          <div class="dang-ky-email">
+            <h3><i class="fa-solid fa-gift"></i> Nhận Ngay Voucher 500K</h3>
+            <p>Đăng ký email để nhận tin khuyến mãi sớm nhất</p>
+            <form class="form-dang-ky" id="form-dang-ky" novalidate>
+              <input
+                type="email"
+                id="email-dang-ky"
+                name="email"
+                placeholder="Nhập email của bạn..."
+                autocomplete="email"
+                aria-describedby="thong-bao-email"
+              />
+              <button type="submit">Đăng ký</button>
+              <p
+                class="thong-bao-form"
+                id="thong-bao-email"
+                role="alert"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+
+          <div class="tra-cuu-don">
+            <h3><i class="fa-solid fa-truck-fast"></i> Tra Cứu Đơn Hàng</h3>
+            <p>Kiểm tra trạng thái vận chuyển nhanh chóng</p>
+            <form class="form-tra-cuu" id="form-tra-cuu" novalidate>
+              <input
+                type="tel"
+                id="sdt-tra-cuu"
+                name="sdt"
+                inputmode="numeric"
+                placeholder="Nhập Số điện thoại mua hàng..."
+                autocomplete="tel"
+                aria-describedby="thong-bao-sdt"
+              />
+              <button type="submit">Kiểm tra</button>
+              <p
+                class="thong-bao-form"
+                id="thong-bao-sdt"
+                role="alert"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="chan-trang-chinh">
+        <div class="khung-chan-trang">
+          <div class="cot-chan-trang brand-col">
+            <h2 class="logo-chan-trang">N1 MOBILE</h2>
+            <p>
+              Hệ thống bán lẻ điện thoại và phụ kiện công nghệ chính hãng hàng
+              đầu.
+            </p>
+            <div class="huy-hieu-uy-tin">
+              <span
+                ><i class="fa-solid fa-shield-halved"></i> 100% Chính hãng</span
+              >
+              <span
+                ><i class="fa-solid fa-rotate-left"></i> 1 đổi 1 trong 30
+                ngày</span
+              >
+            </div>
+          </div>
+
+          <div class="cot-chan-trang">
+            <h4>Sản Phẩm</h4>
+            <ul>
+              <li><a href="danhmuc.html?cat=dienthoai&hang=Apple">iPhone / Apple</a></li>
+              <li><a href="danhmuc.html?cat=dienthoai&hang=Samsung">Samsung Galaxy</a></li>
+              <li><a href="danhmuc.html?cat=dienthoai&hang=Xiaomi">Xiaomi / Redmi</a></li>
+              <li><a href="danhmuc.html?cat=dienthoai&hang=Vivo">Vivo</a></li>
+              <li><a href="danhmuc.html?cat=dienthoai&hang=OPPO">OPPO</a></li>
+              <li><a href="danhmuc.html?cat=phukien">Phụ kiện chính hãng</a></li>
+            </ul>
+          </div>
+
+          <div class="cot-chan-trang">
+            <h4>Chính Sách</h4>
+            <ul>
+              <li><a href="taikhoan.html#bao-hanh">Chính sách bảo hành</a></li>
+              <li><a href="taikhoan.html#doi-tra">Chính sách đổi trả</a></li>
+              <li><a href="taikhoan.html#giao-hang-thanh-toan">Giao hàng & Thanh toán</a></li>
+              <li><a href="taikhoan.html#tra-gop">Trả góp 0% lãi suất</a></li>
+            </ul>
+          </div>
+
+          <div class="cot-chan-trang">
+            <h4>Tổng Đài Hỗ Trợ</h4>
+            <p class="duong-day-nong">1922 6789 (8:00 - 21:30)</p>
+            <p>Email: cskh@n1mobile.com</p>
+            <div class="lien-ket-mxh">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chan-trang-duoi">
+        <div class="khung-chan-trang">
+          <p>© 2026 N1 Mobile. Tất cả quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="nguoidung.js"></script>
+    <script src="giohang.js"></script>
+  </body>
+</html>

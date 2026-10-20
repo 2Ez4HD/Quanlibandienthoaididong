@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cửa Hàng - N1 Mobile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+<link rel="icon" type="image/png" href="logo.png?v=2" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="danhmuc.css" />
+  </head>
+  <body>
+    <div class="thong-bao-chay">
+      <div class="khung-thong-bao">
+        <div class="noi-dung-chay">
+          <div class="nhom-thong-bao">
+            <span><i class="fa-solid fa-tag"></i> Thu cũ giá ngon - Lên đời tiết kiệm</span>
+            <b>•</b>
+            <span><i class="fa-solid fa-certificate"></i> Sản phẩm chính hãng - Xuất VAT đầy đủ</span>
+            <b>•</b>
+            <span><i class="fa-solid fa-truck-fast"></i> Giao nhanh - Miễn phí cho đơn từ 500K</span>
+            <b>•</b>
+            <span><i class="fa-solid fa-gift"></i> Nhiều ưu đãi hấp dẫn mỗi ngày</span>
+            <b>•</b>
+          </div>
+          <div class="nhom-thong-bao">
+            <span><i class="fa-solid fa-tag"></i> Thu cũ giá ngon - Lên đời tiết kiệm</span>
+            <b>•</b>
+            <span><i class="fa-solid fa-certificate"></i> Sản phẩm chính hãng - Xuất VAT đầy đủ</span>
+            <b>•</b>
+            <span><i class="fa-solid fa-truck-fast"></i> Giao nhanh - Miễn phí cho đơn từ 500K</span>
+            <b>•</b>
+            <span><i class="fa-solid fa-gift"></i> Nhiều ưu đãi hấp dẫn mỗi ngày</span>
+            <b>•</b>
+          </div>
+          <div class="nhom-thong-bao">
+            <span><i class="fa-solid fa-tag"></i> Thu cũ giá ngon - Lên đời tiết kiệm</span>
+            <b>•</b>
+            <span><i class="fa-solid fa-certificate"></i> Sản phẩm chính hãng - Xuất VAT đầy đủ</span>
+            <b>•</b>
+            <span><i class="fa-solid fa-truck-fast"></i> Giao nhanh - Miễn phí cho đơn từ 500K</span>
+            <b>•</b>
+            <span><i class="fa-solid fa-gift"></i> Nhiều ưu đãi hấp dẫn mỗi ngày</span>
+            <b>•</b>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="thanh-menu-chinh">
+      <nav class="khung-dieu-huong">
+        <a href="index.html" class="logo">
+          <img
+            src="logo.png"
+            alt="N1 Mobile"
+            title="N1 Mobile - Hệ thống bán lẻ điện thoại di động chính hãng"
+          />
+        </a>
+
+        <ul class="danh-sach-menu">
+          <li class="muc-menu">
+            <a href="danhmuc.html">
+              <i class="fa-solid fa-store"></i>
+              <span>Cửa hàng</span>
+            </a>
+          </li>
+
+          <li class="muc-menu">
+            <a href="index.html#khuyen-mai" class="khuyen-mai">
+              <i class="fa-solid fa-bolt"></i>
+              <span>Khuyến mãi</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="cum-ben-phai">
+          <div class="khung-tim-kiem">
+            <div class="o-tim-kiem">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                id="o-tim-kiem-input"
+                placeholder="Tìm điện thoại, phụ kiện..."
+                autocomplete="off"
+              />
+              <button
+                type="button"
+                class="nut-xoa-tim"
+                id="nut-xoa-tim"
+                title="Xóa"
+                aria-label="Xóa tìm kiếm"
+                hidden
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="hop-goi-y" id="hop-goi-y" hidden></div>
+          </div>
+
+          <button
+            type="button"
+            class="icon-chuc-nang nut-giao-dien"
+            id="nut-giao-dien"
+            title="Chế độ sáng/tối"
+            aria-label="Chuyển chế độ sáng tối"
+          >
+            <i class="fa-solid fa-sun" id="icon-giao-dien"></i>
+          </button>
+
+          <a href="giohang.html" class="icon-chuc-nang" title="Giỏ hàng">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="so-luong" id="badge-gio-hang">0</span>
+          </a>
+
+          <a href="taikhoan.html" class="icon-chuc-nang" title="Tài khoản">
+            <i class="fa-regular fa-circle-user"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <nav class="dieu-huong-trang" aria-label="Breadcrumb">
+      <div class="khung-dieu-huong-trang">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Trang chủ</a>
+        <span class="phan-cach"><i class="fa-solid fa-chevron-right"></i></span>
+        <span class="hien-tai">Cửa hàng</span>
+      </div>
+    </nav>
+
+    <section class="banner-danh-muc-chinh">
+      <div class="hop-banner-danh-muc">
+        <div class="noi-dung-banner-dm">
+          <h1>Khám Phá Công Nghệ Đỉnh Cao</h1>
+          <p>
+            Mua điện thoại smartphone và phụ kiện chính hãng 100% tại N1 Mobile.
+            Hưởng chính sách trả góp 0% lãi suất, bảo hành 12 tháng chính hãng và nhiều voucher giảm giá sốc!
+          </p>
+          <div class="dac-quyen-banner">
+            <span class="dac-quyen-item"><i class="fa-solid fa-shield-halved"></i> 100% Chính Hãng</span>
+            <span class="dac-quyen-item"><i class="fa-solid fa-rotate-left"></i> 1 Đổi 1 Trong 30 Ngày</span>
+            <span class="dac-quyen-item"><i class="fa-solid fa-truck-fast"></i> Giao Hỏa Tốc 2 Giờ</span>
+            <span class="dac-quyen-item"><i class="fa-solid fa-percent"></i> Trả Góp 0% Lãi Suất</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="thanh-loc-thuong-hieu">
+      <div class="danh-sach-chip-hang">
+        <button type="button" class="chip-hang active" data-hang="tatca">Tất cả</button>
+        <button type="button" class="chip-hang" data-hang="Apple">Apple</button>
+        <button type="button" class="chip-hang" data-hang="Samsung">Samsung</button>
+        <button type="button" class="chip-hang" data-hang="Xiaomi">Xiaomi</button>
+        <button type="button" class="chip-hang" data-hang="OPPO">OPPO</button>
+        <button type="button" class="chip-hang" data-hang="Vivo">Vivo</button>
+      </div>
+    </section>
+
+    <main class="khung-trang-danh-muc">
+      <aside class="cot-bo-loc" aria-label="Bộ lọc sản phẩm">
+        <div class="dau-bo-loc">
+          <h3><i class="fa-solid fa-sliders"></i> Bộ Lọc Tìm Kiếm</h3>
+          <button type="button" class="nut-xoa-loc" id="nut-xoa-loc">
+            <i class="fa-solid fa-rotate-left"></i> Xóa lọc
+          </button>
+        </div>
+
+        <div class="nhom-loc">
+          <div class="tieu-de-nhom-loc">Danh mục sản phẩm</div>
+          <div class="danh-sach-lua-chon">
+            <div class="muc-lua-chon">
+              <label>
+                <input type="radio" name="loc-danh-muc" value="tatca" checked />
+                <span>Tất cả danh mục</span>
+              </label>
+            </div>
+            <div class="muc-lua-chon">
+              <label>
+                <input type="radio" name="loc-danh-muc" value="dienthoai" />
+                <span>Điện thoại thông minh</span>
+              </label>
+              <span class="so-luong-sp-nhan">11</span>
+            </div>
+            <div class="muc-lua-chon">
+              <label>
+                <input type="radio" name="loc-danh-muc" value="phukien" />
+                <span>Phụ kiện chính hãng</span>
+              </label>
+              <span class="so-luong-sp-nhan">7</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="nhom-loc">
+          <div class="tieu-de-nhom-loc">Thương hiệu</div>
+          <div class="danh-sach-lua-chon">
+            <div class="muc-lua-chon">
+              <label>
+                <input type="radio" name="loc-hang" value="tatca" checked />
+                <span>Tất cả thương hiệu</span>
+              </label>
+            </div>
+            <div class="muc-lua-chon">
+              <label>
+                <input type="radio" name="loc-hang" value="Apple" />
+                <span>Apple</span>
+              </label>
+              <span class="so-luong-sp-nhan">3</span>
+            </div>
+            <div class="muc-lua-chon">
+              <label>
+                <input type="radio" name="loc-hang" value="Samsung" />
+                <span>Samsung</span>
+              </label>
+              <span class="so-luong-sp-nhan">6</span>
+            </div>
+            <div class="muc-lua-chon">
+              <label>
+                <input type="radio" name="loc-hang" value="Xiaomi" />
+                <span>Xiaomi</span>
+              </label>
+              <span class="so-luong-sp-nhan">2</span>
+            </div>
+            <div class="muc-lua-chon">
+              <label>
+                <input type="radio" name="loc-hang" value="OPPO" />
+                <span>OPPO</span>
+              </label>
+              <span class="so-luong-sp-nhan">3</span>
+            </div>
+            <div class="muc-lua-chon">
+              <label>
+                <input type="radio" name="loc-hang" value="Vivo" />
+                <span>Vivo</span>
+              </label>
+              <span class="so-luong-sp-nhan">1</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="nhom-loc">
+          <div class="tieu-de-nhom-loc">Mức giá</div>
+          <div class="danh-sach-lua-chon">
+            <div class="muc-lua-chon">
+              <label>
+                <input type="radio" name="loc-gia" value="tatca" checked />
+                <span>Tất cả mức giá</span>
+              </label>
+            </div>
+            <div class="muc-lua-chon">
+              <label>
+                <input type="radio" name="loc-gia" value="duoi-2tr" />
+                <span>Dưới 2 triệu</span>
+              </label>
+            </div>
+            <div class="muc-lua-chon">
+              <label>
+                <input type="radio" name="loc-gia" value="2-5tr" />
+                <span>2 - 5 triệu</span>
+              </label>
+            </div>
+            <div class="muc-lua-chon">
+              <label>
+                <input type="radio" name="loc-gia" value="5-10tr" />
+                <span>5 - 10 triệu</span>
+              </label>
+            </div>
+            <div class="muc-lua-chon">
+              <label>
+                <input type="radio" name="loc-gia" value="10-20tr" />
+                <span>10 - 20 triệu</span>
+              </label>
+            </div>
+            <div class="muc-lua-chon">
+              <label>
+                <input type="radio" name="loc-gia" value="tren-20tr" />
+                <span>Trên 20 triệu</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="khoang-gia-tuy-chinh">
+            <span style="font-size: 12.5px; color: var(--text-sub, #666);">Hoặc nhập khoảng giá:</span>
+            <div class="o-nhap-gia-doi">
+              <input type="number" id="gia-min-input" placeholder="Từ (₫)" />
+              <span>-</span>
+              <input type="number" id="gia-max-input" placeholder="Đến (₫)" />
+            </div>
+            <button type="button" class="nut-ap-dung-gia" id="nut-ap-dung-gia">Áp dụng</button>
+          </div>
+        </div>
+
+        <div class="nhom-loc">
+          <div class="tieu-de-nhom-loc">Ưu đãi & Tính năng</div>
+          <div class="danh-sach-lua-chon">
+            <div class="muc-lua-chon">
+              <label>
+                <input type="checkbox" name="loc-tinh-nang" value="tragop" />
+                <span>Hỗ trợ trả góp 0%</span>
+              </label>
+            </div>
+            <div class="muc-lua-chon">
+              <label>
+                <input type="checkbox" name="loc-tinh-nang" value="hot" />
+                <span>Sản phẩm Bán chạy (Hot)</span>
+              </label>
+            </div>
+            <div class="muc-lua-chon">
+              <label>
+                <input type="checkbox" name="loc-tinh-nang" value="moi" />
+                <span>Mẫu mới ra mắt 2026</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <section class="khu-vuc-san-pham" aria-label="Danh sách sản phẩm">
+        <div class="thanh-cong-cu-danh-muc">
+          <div class="ben-trai-cong-cu">
+            <button type="button" class="nut-mo-loc-mobile" id="nut-mo-loc-mobile">
+              <i class="fa-solid fa-sliders"></i> Bộ lọc
+            </button>
+            <div class="dem-ket-qua">
+              Hiển thị: <b id="dem-so-luong">0 sản phẩm</b>
+            </div>
+            <div class="the-tag-dang-loc" id="the-tag-dang-loc"></div>
+          </div>
+
+          <div class="ben-phai-cong-cu">
+            <div class="hop-sap-xep">
+              <label for="lua-chon-sap-xep"><i class="fa-solid fa-arrow-down-short-wide"></i> Sắp xếp:</label>
+              <select id="lua-chon-sap-xep" class="lua-chon-sap-xep">
+                <option value="mac-dinh">Nổi bật nhất</option>
+                <option value="gia-tang">Giá: Thấp đến Cao</option>
+                <option value="gia-giam">Giá: Cao đến Thấp</option>
+                <option value="giam-nhieu">% Giảm giá nhiều</option>
+                <option value="danh-gia">Đánh giá cao nhất</option>
+                <option value="moi-nhat">Mới nhất 2026</option>
+              </select>
+            </div>
+
+            <div class="nhom-nut-che-do-xem">
+              <button
+                type="button"
+                class="nut-che-do-xem active"
+                id="nut-xem-luoi"
+                title="Dạng lưới"
+                aria-label="Xem dạng lưới"
+              >
+                <i class="fa-solid fa-grip"></i>
+              </button>
+              <button
+                type="button"
+                class="nut-che-do-xem"
+                id="nut-xem-danh-sach"
+                title="Dạng danh sách"
+                aria-label="Xem dạng danh sách"
+              >
+                <i class="fa-solid fa-list-ul"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="luoi-san-pham" id="luoi-san-pham">
+        </div>
+
+        <nav class="khung-phan-trang" id="khung-phan-trang" aria-label="Phân trang danh mục"></nav>
+      </section>
+    </main>
+
+    <button id="nutLenDauTrang" class="nut-len-dau-trang" title="Lên đầu trang">
+      ⬆
+    </button>
+
+    <footer class="chan-trang">
+      <div class="chan-trang-tren">
+        <div class="khung-chan-trang">
+          <div class="dang-ky-email">
+            <h3><i class="fa-solid fa-gift"></i> Nhận Ngay Voucher 500K</h3>
+            <p>Đăng ký email để nhận tin khuyến mãi sớm nhất</p>
+            <form class="form-dang-ky" id="form-dang-ky" novalidate>
+              <input
+                type="email"
+                id="email-dang-ky"
+                name="email"
+                placeholder="Nhập email của bạn..."
+                autocomplete="email"
+                aria-describedby="thong-bao-email"
+              />
+              <button type="submit">Đăng ký</button>
+              <p
+                class="thong-bao-form"
+                id="thong-bao-email"
+                role="alert"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+
+          <div class="tra-cuu-don">
+            <h3><i class="fa-solid fa-truck-fast"></i> Tra Cứu Đơn Hàng</h3>
+            <p>Kiểm tra trạng thái vận chuyển nhanh chóng</p>
+            <form class="form-tra-cuu" id="form-tra-cuu" novalidate>
+              <input
+                type="tel"
+                id="sdt-tra-cuu"
+                name="sdt"
+                inputmode="numeric"
+                placeholder="Nhập Số điện thoại mua hàng..."
+                autocomplete="tel"
+                aria-describedby="thong-bao-sdt"
+              />
+              <button type="submit">Kiểm tra</button>
+              <p
+                class="thong-bao-form"
+                id="thong-bao-sdt"
+                role="alert"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="chan-trang-chinh">
+        <div class="khung-chan-trang">
+          <div class="cot-chan-trang brand-col">
+            <h2 class="logo-chan-trang">N1 MOBILE</h2>
+            <p>
+              Hệ thống bán lẻ điện thoại và phụ kiện công nghệ chính hãng hàng
+              đầu.
+            </p>
+            <div class="huy-hieu-uy-tin">
+              <span><i class="fa-solid fa-shield-halved"></i> 100% Chính hãng</span>
+              <span><i class="fa-solid fa-rotate-left"></i> 1 đổi 1 trong 30 ngày</span>
+            </div>
+          </div>
+
+          <div class="cot-chan-trang">
+            <h4>Sản Phẩm</h4>
+            <ul>
+              <li><a href="danhmuc.html?cat=dienthoai&hang=Apple">iPhone / Apple</a></li>
+              <li><a href="danhmuc.html?cat=dienthoai&hang=Samsung">Samsung Galaxy</a></li>
+              <li><a href="danhmuc.html?cat=dienthoai&hang=Xiaomi">Xiaomi / Redmi</a></li>
+              <li><a href="danhmuc.html?cat=dienthoai&hang=Vivo">Vivo</a></li>
+              <li><a href="danhmuc.html?cat=dienthoai&hang=OPPO">OPPO</a></li>
+              <li><a href="danhmuc.html?cat=phukien">Phụ kiện chính hãng</a></li>
+            </ul>
+          </div>
+
+          <div class="cot-chan-trang">
+            <h4>Chính Sách</h4>
+            <ul>
+              <li><a href="taikhoan.html#bao-hanh">Chính sách bảo hành</a></li>
+              <li><a href="taikhoan.html#doi-tra">Chính sách đổi trả</a></li>
+              <li><a href="taikhoan.html#giao-hang-thanh-toan">Giao hàng & Thanh toán</a></li>
+              <li><a href="taikhoan.html#tra-gop">Trả góp 0% lãi suất</a></li>
+            </ul>
+          </div>
+
+          <div class="cot-chan-trang">
+            <h4>Tổng Đài Hỗ Trợ</h4>
+            <p class="duong-day-nong">1922 6789 (8:00 - 21:30)</p>
+            <p>Email: cskh@n1mobile.com</p>
+            <div class="lien-ket-mxh">
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chan-trang-duoi">
+        <div class="khung-chan-trang">
+          <p>© 2026 N1 Mobile. Tất cả quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="nguoidung.js"></script>
+    <script src="danhmuc.js"></script>
+  </body>
+</html>
+

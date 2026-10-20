@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>N1 Mobile - Hệ thống bán lẻ điện thoại di động chính hãng</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+<link rel="icon" type="image/png" href="logo.png?v=2" />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="thong-bao-chay">
+      <div class="khung-thong-bao">
+        <div class="noi-dung-chay">
+          <div class="nhom-thong-bao">
+            <span
+              ><i class="fa-solid fa-tag"></i> Thu cũ giá ngon - Lên đời tiết
+              kiệm</span
+            >
+            <b>•</b>
+            <span
+              ><i class="fa-solid fa-certificate"></i> Sản phẩm chính hãng -
+              Xuất VAT đầy đủ</span
+            >
+            <b>•</b>
+            <span
+              ><i class="fa-solid fa-truck-fast"></i> Giao nhanh - Miễn phí cho
+              đơn từ 500K</span
+            >
+            <b>•</b>
+            <span
+              ><i class="fa-solid fa-gift"></i> Nhiều ưu đãi hấp dẫn mỗi
+              ngày</span
+            >
+            <b>•</b>
+          </div>
+
+          <div class="nhom-thong-bao">
+            <span
+              ><i class="fa-solid fa-tag"></i> Thu cũ giá ngon - Lên đời tiết
+              kiệm</span
+            >
+            <b>•</b>
+            <span
+              ><i class="fa-solid fa-certificate"></i> Sản phẩm chính hãng -
+              Xuất VAT đầy đủ</span
+            >
+            <b>•</b>
+            <span
+              ><i class="fa-solid fa-truck-fast"></i> Giao nhanh - Miễn phí cho
+              đơn từ 500K</span
+            >
+            <b>•</b>
+            <span
+              ><i class="fa-solid fa-gift"></i> Nhiều ưu đãi hấp dẫn mỗi
+              ngày</span
+            >
+            <b>•</b>
+          </div>
+
+          <div class="nhom-thong-bao">
+            <span
+              ><i class="fa-solid fa-tag"></i> Thu cũ giá ngon - Lên đời tiết
+              kiệm</span
+            >
+            <b>•</b>
+            <span
+              ><i class="fa-solid fa-certificate"></i> Sản phẩm chính hãng -
+              Xuất VAT đầy đủ</span
+            >
+            <b>•</b>
+            <span
+              ><i class="fa-solid fa-truck-fast"></i> Giao nhanh - Miễn phí cho
+              đơn từ 500K</span
+            >
+            <b>•</b>
+            <span
+              ><i class="fa-solid fa-gift"></i> Nhiều ưu đãi hấp dẫn mỗi
+              ngày</span
+            >
+            <b>•</b>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="thanh-menu-chinh">
+      <nav class="khung-dieu-huong">
+        <a href="index.html" class="logo">
+          <img
+            src="logo.png"
+            alt="N1 Mobile"
+            title="N1 Mobile - Hệ thống bán lẻ điện thoại di động chính hãng"
+          />
+        </a>
+
+        <ul class="danh-sach-menu">
+          <li class="muc-menu">
+            <a href="danhmuc.html">
+              <i class="fa-solid fa-store"></i>
+              <span>Cửa hàng</span>
+            </a>
+          </li>
+
+          <li class="muc-menu">
+            <a href="#khuyen-mai" class="khuyen-mai">
+              <i class="fa-solid fa-bolt"></i>
+              <span>Khuyến mãi</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="cum-ben-phai">
+          <div class="khung-tim-kiem">
+            <div class="o-tim-kiem">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                id="o-tim-kiem-input"
+                placeholder="Bạn muốn mua gì hôm nay?"
+                autocomplete="off"
+              />
+              <button
+                type="button"
+                class="nut-xoa-tim"
+                id="nut-xoa-tim"
+                title="Xóa"
+                aria-label="Xóa tìm kiếm"
+                hidden
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="hop-goi-y" id="hop-goi-y" hidden></div>
+          </div>
+
+          <button
+            type="button"
+            class="icon-chuc-nang nut-giao-dien"
+            id="nut-giao-dien"
+            title="Chế độ sáng/tối"
+            aria-label="Chuyển chế độ sáng tối"
+          >
+            <i class="fa-solid fa-sun" id="icon-giao-dien"></i>
+          </button>
+
+          <a href="giohang.html" class="icon-chuc-nang" title="Giỏ hàng">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="so-luong">0</span>
+          </a>
+
+          <a href="taikhoan.html" class="icon-chuc-nang" title="Tài khoản">
+            <i class="fa-regular fa-circle-user"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="tieu-de-phan-apple">
+      <h2>Mới Nhất Từ Apple</h2>
+    </div>
+
+    <section class="slider-chinh">
+      <div class="khung-slider">
+        <div class="duong-ray-slider">
+          <div class="slide slide-giua">
+            <div class="noi-dung-hero">
+              <h1 class="tieu-de-hero">iPhone Duo</h1>
+              <h1 class="tieu-de-hero-lon">Xin chào, xin chào.</h1>
+
+              <p class="mo-ta-hero">
+                Đặt trước từ 19:00 ngày 16 tháng 10, giờ Việt Nam<br />Có hàng
+                từ ngày 23 tháng 10
+              </p>
+            </div>
+
+            <div class="khung-anh-hero">
+              <video autoplay muted playsinline src="iphoneduo.webm"></video>
+
+              <div class="nut-cta-hero">
+                <span class="hop-gia"
+                  >Từ 64.999.000đ hoặc 2.651.000đ/th. trong 24 tháng.*</span
+                >
+                <a href="danhmuc.html?id=iphone-duo" class="xem-chi-tiet">Xem chi tiết</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide slide-2">
+            <div class="khung-anh-hero">
+              <a href="danhmuc.html?id=iphone-18-pro" class="link-video">
+                <video
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  src="ip18pro.mp4"
+                ></video>
+              </a>
+
+              <div class="noi-dung-goc-trai-duoi">
+                <span class="tieu-de-phu">iPhone 18 Pro</span>
+                <h1 class="tieu-de-chinh">Pro hơn hẳn.</h1>
+              </div>
+
+              <button class="nut-xem-day-du" type="button">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+                <span>Xem bản đầy đủ (49s)</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="slide slide-3">
+            <div class="noi-dung-slide">
+              <h3 class="tieu-de-slide">Airpod 5</h3>
+              <h3 class="tieu-de-slide-chi-tiet">
+                Chủ Động Khử Tiếng Ồn hiệu quả hơn đến 1,5 lần so với thế hệ
+                trước.
+              </h3>
+            </div>
+            <a href="danhmuc.html?id=airpods-5" class="link-video khung-hieu-ung-sang">
+              <img src="airpod5.jpg" class="anh-trinh-chieu" alt="AirPods 5" />
+            </a>
+          </div>
+        </div>
+
+        <button
+          class="nut-chuyen-slide nut-truoc"
+          id="nut-truoc"
+          type="button"
+          aria-label="Slide trước"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button
+          class="nut-chuyen-slide nut-sau"
+          id="nut-sau"
+          type="button"
+          aria-label="Slide sau"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+    <div class="dau-cham-slider">
+      <div class="cham" data-slide="0">
+        <div class="thanh-tien-trinh"></div>
+      </div>
+      <div class="cham" data-slide="1">
+        <div class="thanh-tien-trinh"></div>
+      </div>
+      <div class="cham" data-slide="2">
+        <div class="thanh-tien-trinh"></div>
+      </div>
+    </div>
+
+    <div class="tieu-de-phan-android">
+      <h2>Những Siêu Phẩm Android</h2>
+      <a href="danhmuc.html?cat=dienthoai" class="xem-them">
+        <span>Xem thêm</span>
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </div>
+
+    <section class="banner-san-pham banner-1">
+      <div class="noi-dung-banner">
+        <div class="van-ban-banner">
+          <p class="nhan-banner">Xiaomi</p>
+          <h2>Xiaomi 17 Ultra</h2>
+          <p class="mo-ta-banner">
+            Camera LEICA chuyên nghiệp.<br />Hiệu năng dẫn đầu.
+          </p>
+          <div class="nhom-nut-banner">
+            <a href="danhmuc.html?id=xiaomi-17-ultra" class="nut-chinh">Xem chi tiết</a>
+            <a href="giohang.html" class="nut-phu" data-mua-nhanh="xiaomi-17-ultra">Mua ngay</a>
+          </div>
+        </div>
+        <div class="anh-banner">
+          <a href="danhmuc.html?id=xiaomi-17-ultra" class="lien-ket-anh">
+            <img src="xiaomi17ultra.png" alt="Xiaomi 17 Ultra" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-san-pham banner-2">
+      <div class="noi-dung-banner dao-chieu">
+        <div class="van-ban-banner">
+          <p class="nhan-banner">OPPO</p>
+          <h2>OPPO Find X9 Ultra</h2>
+          <p class="mo-ta-banner">
+            Khám phá những vẻ đẹp.<br />Camera Hasselblad đỉnh cao.
+          </p>
+          <div class="nhom-nut-banner">
+            <a href="danhmuc.html?id=oppo-find-x9-ultra" class="nut-chinh">Xem chi tiết</a>
+            <a href="giohang.html" class="nut-phu" data-mua-nhanh="oppo-find-x9-ultra">Mua ngay</a>
+          </div>
+        </div>
+        <div class="anh-banner">
+          <a href="danhmuc.html?id=oppo-find-x9-ultra" class="lien-ket-anh">
+            <img src="oppofindx9ultra.png" alt="OPPO Find X9 Ultra" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-san-pham banner-3">
+      <div class="noi-dung-banner">
+        <div class="van-ban-banner">
+          <p class="nhan-banner">Samsung</p>
+          <h2>Samsung Galaxy S26 Ultra</h2>
+          <p class="mo-ta-banner">
+            Mạnh mẽ hơn bao giờ hết.<br />S Pen tích hợp.
+          </p>
+          <div class="nhom-nut-banner">
+            <a href="danhmuc.html?id=galaxy-s26-ultra" class="nut-chinh">Xem chi tiết</a>
+            <a href="giohang.html" class="nut-phu" data-mua-nhanh="galaxy-s26-ultra">Mua ngay</a>
+          </div>
+        </div>
+        <div class="anh-banner">
+          <a href="danhmuc.html?id=galaxy-s26-ultra" class="lien-ket-anh">
+            <img src="s26ultra.png" alt="Galaxy S26 Ultra" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-san-pham banner-4">
+      <div class="noi-dung-banner dao-chieu">
+        <div class="van-ban-banner">
+          <p class="nhan-banner">Vivo</p>
+          <h2>Vivo X300 Ultra</h2>
+          <p class="mo-ta-banner">
+            Điện Ảnh Chuẩn ZEISS.<br />Kiến Tạo Tuyệt Tác.
+          </p>
+          <div class="nhom-nut-banner">
+            <a href="danhmuc.html?id=vivo-x300-ultra" class="nut-chinh">Xem chi tiết</a>
+            <a href="giohang.html" class="nut-phu" data-mua-nhanh="vivo-x300-ultra">Mua ngay</a>
+          </div>
+        </div>
+        <div class="anh-banner">
+          <a href="danhmuc.html?id=vivo-x300-ultra" class="lien-ket-anh">
+            <img src="vivox300ultra.jpg" alt="Vivo X300 Ultra" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="khung-khuyen-mai">
+      <img
+        class="anh-khuyen-mai-tren"
+        src="khuyenmai.webp"
+        alt="Khuyến mãi"
+        id="khuyen-mai"
+      />
+    </div>
+    <div class="khung-slider-voucher">
+      <div class="duong-ray-voucher">
+        <a href="danhmuc.html?id=pin-du-phong-ugreen-145w" class="slide-voucher active">
+          <img src="ugreen.jpg" alt="Voucher Ugreen" />
+        </a>
+        <a href="danhmuc.html?id=cu-sac-anker-gan-65w" class="slide-voucher">
+          <img src="anker.jpg" alt="Voucher Anker" />
+        </a>
+        <a href="danhmuc.html?id=tai-nghe-oppo-enco-buds" class="slide-voucher">
+          <img src="oppobud.jpg" alt="Voucher Oppo" />
+        </a>
+        <a class="slide-voucher">
+          <img src="deal.jpg" alt="Voucher Deal" />
+        </a>
+        <a class="slide-voucher">
+          <img src="samsung.jpg" alt="Voucher Samsung" />
+        </a>
+      </div>
+
+      <button class="nut-vc nut-vc-truoc" id="nut-vc-truoc">&#10094;</button>
+      <button class="nut-vc nut-vc-sau" id="nut-vc-sau">&#10095;</button>
+
+      <div class="dau-cham-vc">
+        <span class="cham-vc active"></span>
+        <span class="cham-vc"></span>
+        <span class="cham-vc"></span>
+        <span class="cham-vc"></span>
+        <span class="cham-vc"></span>
+      </div>
+    </div>
+
+    <a class="anh-gif-voucher">
+      <img src="voucher.gif" alt="Voucher GIF" />
+    </a>
+
+    <div class="slider-xoe-quat">
+      <div class="muc-xoe-quat active">
+        <a href="danhmuc.html?id=iphone-18-pro">
+          <img src="ip18voucher.png" alt="Khuyến mãi 1" />
+          <div class="chu-thich-xoe-quat">
+            <span>iPhone 18 Pro</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="muc-xoe-quat">
+        <a href="danhmuc.html?id=galaxy-s25-ultra">
+          <img src="voucher3.png" alt="Khuyến mãi 2" />
+          <div class="chu-thich-xoe-quat">
+            <span>Samsung Galaxy S25 Ultra </span>
+          </div>
+        </a>
+      </div>
+
+      <div class="muc-xoe-quat">
+        <a href="danhmuc.html?id=oppo-a7-pro">
+          <img src="oppoa7pro.webp" alt="Khuyến mãi 3" />
+          <div class="chu-thich-xoe-quat">
+            <span>Oppo A7 Pro 5G</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="muc-xoe-quat">
+        <a href="danhmuc.html?id=samsung-galaxy-a08">
+          <img src="ssa08.png" alt="Khuyến mãi 4" />
+          <div class="chu-thich-xoe-quat">
+            <span>Samsung Galaxy A08</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <section class="phan-tin-tuc">
+      <div class="tieu-de-phan">
+        <h2>Tin Tức & Mẹo Công Nghệ</h2>
+        <a href="tintuc.html" class="xem-tat-ca"
+          >Xem tất cả <i class="fas fa-chevron-right"></i
+        ></a>
+      </div>
+      <div class="luoi-tin-tuc">
+<button type="button" class="the-tin-tuc the-tin-tuc-nut" onclick="window.location.href='tintuc.html#bai-1'">
+          <div class="anh-tin-tuc">
+            <img
+              src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=600&auto=format&fit=crop"
+              alt="Tin tức 1"
+            />
+          </div>
+          <div class="than-tin-tuc">
+            <span class="ngay-tin-tuc">05 Tháng 10, 2026</span>
+            <h3 class="tieu-de-tin-tuc">
+              Đánh giá chi tiết iPhone mới: Liệu có đáng để nâng cấp?
+            </h3>
+            <p class="mo-ta-tin-tuc">
+              Khám phá những cải tiến vượt trội về camera, thời lượng pin và
+              hiệu năng trên dòng flagship mới nhất.
+            </p>
+          </div>
+        </button>
+
+        <button type="button" class="the-tin-tuc the-tin-tuc-nut" onclick="window.location.href='tintuc.html#bai-2'">
+          <div class="anh-tin-tuc">
+            <img
+              src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=600&auto=format&fit=crop"
+              alt="Củ sạc và dây sạc nhanh"
+            />
+          </div>
+          <div class="than-tin-tuc">
+            <span class="ngay-tin-tuc">02 Tháng 10, 2026</span>
+            <h3 class="tieu-de-tin-tuc">
+              Top 5 củ sạc nhanh GaN chuẩn PD đáng mua nhất hiện nay
+            </h3>
+            <p class="mo-ta-tin-tuc">
+              Tổng hợp các mẫu củ sạc công suất cao, thiết kế nhỏ gọn giúp sạc
+              tối ưu cho iPhone, iPad và MacBook an toàn tuyệt đối.
+            </p>
+          </div>
+        </button>
+
+        <button type="button" class="the-tin-tuc the-tin-tuc-nut" onclick="window.location.href='tintuc.html#bai-3'">
+          <div class="anh-tin-tuc">
+            <img
+              src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?q=80&w=1589&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+              alt="Tin tức 3"
+            />
+          </div>
+          <div class="than-tin-tuc">
+            <span class="ngay-tin-tuc">28 Tháng 09, 2026</span>
+            <h3 class="tieu-de-tin-tuc">
+              Hướng dẫn chọn tai nghe AirPods phù hợp với nhu cầu
+            </h3>
+            <p class="mo-ta-tin-tuc">
+              So sánh chi tiết tính năng chống ồn, chất âm và cảm giác đeo giữa
+              các dòng AirPods hiện nay.
+            </p>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <section class="phan-danh-gia">
+      <div class="tieu-de-phan can-giua">
+        <h2>Khách Hàng Nói Gì Về Chúng Tôi</h2>
+        <p class="mo-ta-phan">
+          Sự hài lòng của khách hàng là niềm tự hào lớn nhất
+        </p>
+      </div>
+      <div class="luoi-danh-gia">
+        <!-- Review 1 -->
+        <div class="the-danh-gia">
+          <div class="sao">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i>
+          </div>
+          <p class="noi-dung-danh-gia">
+            "Sản phẩm giao cực nhanh, đóng gói cẩn thận. Nhân viên hỗ trợ tư vấn
+            nhiệt tình, giao diện web mua hàng rất dễ thao tác!"
+          </p>
+          <div class="thong-tin-nguoi-dung">
+            <img
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop"
+              alt="Avatar 1"
+            />
+            <div>
+              <h4>William Henry</h4>
+              <span>UI/UX Designer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="the-danh-gia">
+          <div class="sao">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i>
+          </div>
+          <p class="noi-dung-danh-gia">
+            "Chính sách bảo hành và hậu mãi rất uy tín. Đã mua máy ở đây lần thứ
+            3 và vẫn luôn cảm thấy hài lòng tuyệt đối."
+          </p>
+          <div class="thong-tin-nguoi-dung">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop"
+              alt="Avatar 2"
+            />
+            <div>
+              <h4>James Alexander</h4>
+              <span>Lập trình viên</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="the-danh-gia">
+          <div class="sao">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i>
+          </div>
+          <p class="noi-dung-danh-gia">
+            "Giá cả cạnh tranh, nhiều ưu đãi hấp dẫn. Chế độ giao diện tối trên
+            web xem ban đêm rất êm mắt, 10 điểm!"
+          </p>
+          <div class="thong-tin-nguoi-dung">
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&auto=format&fit=crop"
+              alt="Avatar 3"
+            />
+            <div>
+              <h4>Olivia Grace</h4>
+              <span>Content Creator</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="phan-thuong-hieu">
+      <div class="tieu-de-phan can-giua">
+        <h2>Thương Hiệu Đồng Hành</h2>
+      </div>
+      <div class="danh-sach-thuong-hieu">
+        <div class="muc-thuong-hieu"><img src="apple.svg" alt="Brand 1" /></div>
+        <div class="muc-thuong-hieu"><img src="oppo.png" alt="Brand 2" /></div>
+        <div class="muc-thuong-hieu">
+          <img src="xiaomi.svg" alt="Brand 3" />
+        </div>
+        <div class="muc-thuong-hieu"><img src="vivo.png" alt="Brand 4" /></div>
+        <div class="muc-thuong-hieu">
+          <img src="samsung.svg" alt="Brand 5" />
+        </div>
+      </div>
+    </section>
+
+    <button id="nutLenDauTrang" class="nut-len-dau-trang" title="Lên đầu trang">
+      ⬆
+    </button>
+
+    <footer class="chan-trang">
+      <div class="chan-trang-tren">
+        <div class="khung-chan-trang">
+          <div class="dang-ky-email">
+            <h3><i class="fa-solid fa-gift"></i> Nhận Ngay Voucher 500K</h3>
+            <p>Đăng ký email để nhận tin khuyến mãi sớm nhất</p>
+            <form class="form-dang-ky" id="form-dang-ky" novalidate>
+              <input
+                type="email"
+                id="email-dang-ky"
+                name="email"
+                placeholder="Nhập email của bạn..."
+                autocomplete="email"
+                aria-describedby="thong-bao-email"
+              />
+              <button type="submit">Đăng ký</button>
+              <p
+                class="thong-bao-form"
+                id="thong-bao-email"
+                role="alert"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+
+          <div class="tra-cuu-don">
+            <h3><i class="fa-solid fa-truck-fast"></i> Tra Cứu Đơn Hàng</h3>
+            <p>Kiểm tra trạng thái vận chuyển nhanh chóng</p>
+            <form class="form-tra-cuu" id="form-tra-cuu" novalidate>
+              <input
+                type="tel"
+                id="sdt-tra-cuu"
+                name="sdt"
+                inputmode="numeric"
+                placeholder="Nhập Số điện thoại mua hàng..."
+                autocomplete="tel"
+                aria-describedby="thong-bao-sdt"
+              />
+              <button type="submit">Kiểm tra</button>
+              <p
+                class="thong-bao-form"
+                id="thong-bao-sdt"
+                role="alert"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="chan-trang-chinh">
+        <div class="khung-chan-trang">
+          <div class="cot-chan-trang brand-col">
+            <h2 class="logo-chan-trang">N1 MOBILE</h2>
+            <p>
+              Hệ thống bán lẻ điện thoại và phụ kiện công nghệ chính hãng hàng
+              đầu.
+            </p>
+            <div class="huy-hieu-uy-tin">
+              <span
+                ><i class="fa-solid fa-shield-halved"></i> 100% Chính hãng</span
+              >
+              <span
+                ><i class="fa-solid fa-rotate-left"></i> 1 đổi 1 trong 30
+                ngày</span
+              >
+            </div>
+          </div>
+
+          <div class="cot-chan-trang">
+            <h4>Sản Phẩm</h4>
+            <ul>
+              <li><a href="danhmuc.html?cat=dienthoai&hang=Apple">iPhone / Apple</a></li>
+              <li><a href="danhmuc.html?cat=dienthoai&hang=Samsung">Samsung Galaxy</a></li>
+              <li><a href="danhmuc.html?cat=dienthoai&hang=Xiaomi">Xiaomi / Redmi</a></li>
+              <li><a href="danhmuc.html?cat=dienthoai&hang=Vivo">Vivo</a></li>
+              <li><a href="danhmuc.html?cat=dienthoai&hang=OPPO">OPPO</a></li>
+              <li><a href="danhmuc.html?cat=phukien">Phụ kiện chính hãng</a></li>
+            </ul>
+          </div>
+
+          <div class="cot-chan-trang">
+            <h4>Chính Sách</h4>
+            <ul>
+              <li><a href="taikhoan.html#bao-hanh">Chính sách bảo hành</a></li>
+              <li><a href="taikhoan.html#doi-tra">Chính sách đổi trả</a></li>
+              <li><a href="taikhoan.html#giao-hang-thanh-toan">Giao hàng & Thanh toán</a></li>
+              <li><a href="taikhoan.html#tra-gop">Trả góp 0% lãi suất</a></li>
+            </ul>
+          </div>
+
+          <div class="cot-chan-trang">
+            <h4>Tổng Đài Hỗ Trợ</h4>
+            <p class="duong-day-nong">1922 6789 (8:00 - 21:30)</p>
+            <p>Email: cskh@n1mobile.com</p>
+            <div class="lien-ket-mxh">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chan-trang-duoi">
+        <div class="khung-chan-trang">
+          <p>© 2026 N1 Mobile. Tất cả quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="nguoidung.js"></script>
+  </body>
+</html>

@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tin tức phụ kiện - N1 Mobile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+<link rel="icon" type="image/png" href="logo.png?v=2" />
+
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="tintuc.css" />
+  </head>
+  <body>
+    <div class="thong-bao-chay">
+      <div class="khung-thong-bao">
+        <div class="noi-dung-chay">
+          <div class="nhom-thong-bao">
+            <span><i class="fa-solid fa-tag"></i> Thu cũ giá ngon - Lên đời tiết kiệm</span>
+            <b>•</b>
+            <span><i class="fa-solid fa-certificate"></i> Sản phẩm chính hãng - Xuất VAT đầy đủ</span>
+            <b>•</b>
+            <span><i class="fa-solid fa-truck-fast"></i> Giao nhanh - Miễn phí cho đơn từ 500K</span>
+            <b>•</b>
+            <span><i class="fa-solid fa-gift"></i> Nhiều ưu đãi hấp dẫn mỗi ngày</span>
+            <b>•</b>
+          </div>
+          <div class="nhom-thong-bao">
+            <span><i class="fa-solid fa-tag"></i> Thu cũ giá ngon - Lên đời tiết kiệm</span>
+            <b>•</b>
+            <span><i class="fa-solid fa-certificate"></i> Sản phẩm chính hãng - Xuất VAT đầy đủ</span>
+            <b>•</b>
+            <span><i class="fa-solid fa-truck-fast"></i> Giao nhanh - Miễn phí cho đơn từ 500K</span>
+            <b>•</b>
+            <span><i class="fa-solid fa-gift"></i> Nhiều ưu đãi hấp dẫn mỗi ngày</span>
+            <b>•</b>
+          </div>
+          <div class="nhom-thong-bao">
+            <span><i class="fa-solid fa-tag"></i> Thu cũ giá ngon - Lên đời tiết kiệm</span>
+            <b>•</b>
+            <span><i class="fa-solid fa-certificate"></i> Sản phẩm chính hãng - Xuất VAT đầy đủ</span>
+            <b>•</b>
+            <span><i class="fa-solid fa-truck-fast"></i> Giao nhanh - Miễn phí cho đơn từ 500K</span>
+            <b>•</b>
+            <span><i class="fa-solid fa-gift"></i> Nhiều ưu đãi hấp dẫn mỗi ngày</span>
+            <b>•</b>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="thanh-menu-chinh">
+      <nav class="khung-dieu-huong">
+        <a href="index.html" class="logo">
+          <img
+            src="logo.png"
+            alt="N1 Mobile"
+            title="N1 Mobile - Hệ thống bán lẻ điện thoại di động chính hãng"
+          />
+        </a>
+
+        <ul class="danh-sach-menu">
+          <li class="muc-menu">
+            <a href="danhmuc.html">
+              <i class="fa-solid fa-store"></i>
+              <span>Cửa hàng</span>
+            </a>
+          </li>
+
+          <li class="muc-menu">
+            <a href="index.html#khuyen-mai" class="khuyen-mai">
+              <i class="fa-solid fa-bolt"></i>
+              <span>Khuyến mãi</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="cum-ben-phai">
+          <div class="khung-tim-kiem">
+            <div class="o-tim-kiem">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                id="o-tim-kiem-input"
+                placeholder="Bạn muốn mua gì hôm nay?"
+                autocomplete="off"
+              />
+              <button
+                type="button"
+                class="nut-xoa-tim"
+                id="nut-xoa-tim"
+                title="Xóa"
+                aria-label="Xóa tìm kiếm"
+                hidden
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="hop-goi-y" id="hop-goi-y" hidden></div>
+          </div>
+
+          <button
+            type="button"
+            class="icon-chuc-nang nut-giao-dien"
+            id="nut-giao-dien"
+            title="Chế độ sáng/tối"
+            aria-label="Chuyển chế độ sáng tối"
+          >
+            <i class="fa-solid fa-sun" id="icon-giao-dien"></i>
+          </button>
+
+          <a href="giohang.html" class="icon-chuc-nang" title="Giỏ hàng">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="so-luong" id="badge-gio-hang">0</span>
+          </a>
+
+          <a href="taikhoan.html" class="icon-chuc-nang" title="Tài khoản">
+            <i class="fa-regular fa-circle-user"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="tt-main">
+      <div class="tt-container">
+        <nav class="tt-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html"><i class="fa-solid fa-house"></i> Trang chủ</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <strong>Tin tức</strong>
+        </nav>
+
+        <div id="tt-view-list">
+          <header class="tt-heading">
+            <h1>Tin Tức</h1>
+            <p>Mẹo chọn mua, đánh giá sản phẩm và xu hướng công nghệ mới nhất từ N1 Mobile.</p>
+          </header>
+
+          <section id="tt-featured" aria-label="Bài viết nổi bật"></section>
+
+          <div class="tt-toolbar" id="tt-toolbar">
+            <div class="tt-search-wrap">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="search" id="tt-search" placeholder="Tìm bài viết..." autocomplete="off" aria-label="Tìm kiếm tin tức" />
+              <button type="button" class="tt-search-xoa" id="tt-search-xoa" hidden title="Xóa" aria-label="Xóa tìm kiếm">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="tt-cats" id="tt-cats" role="tablist" aria-label="Lọc theo danh mục"></div>
+          </div>
+
+          <div class="tt-layout">
+            <div class="tt-col-main">
+              <h2 class="tt-section-title">Bài viết mới nhất <span class="tt-ket-qua" id="tt-ket-qua"></span></h2>
+              <div class="tt-list" id="tt-list"></div>
+              <p class="tt-rong" id="tt-rong" hidden>
+                <i class="fa-regular fa-folder-open"></i>
+                Không tìm thấy bài viết phù hợp.
+              </p>
+            </div>
+
+            <aside class="tt-aside" aria-label="Cột bên">
+              <section class="tt-box">
+                <h2 class="tt-box-title"><i class="fa-solid fa-fire"></i> Bài viết xem nhiều</h2>
+                <ol class="tt-popular" id="tt-popular"></ol>
+              </section>
+
+              <section class="tt-box" id="tt-box-da-luu">
+                <h2 class="tt-box-title"><i class="fa-solid fa-bookmark"></i> Đã lưu</h2>
+                <ul class="tt-saved" id="tt-saved"></ul>
+                <p class="tt-saved-rong" id="tt-saved-rong">Chưa lưu bài nào. Bấm biểu tượng bookmark khi đọc bài.</p>
+              </section>
+
+              <section class="tt-box tt-sub" aria-labelledby="tt-sub-title">
+                <h2 class="tt-box-title" id="tt-sub-title"><i class="fa-solid fa-envelope-open-text"></i> Nhận tin qua email</h2>
+                <p>Mỗi tuần một email về sản phẩm mới và ưu đãi dành riêng cho người đăng ký.</p>
+                <form id="tt-form-email" novalidate>
+                  <input type="email" id="tt-email" placeholder="Nhập email của bạn..." autocomplete="email" aria-describedby="tt-email-tb" />
+                  <button type="submit">Đăng ký nhận tin</button>
+                  <p class="thong-bao-form" id="tt-email-tb" role="alert" aria-live="polite"></p>
+                </form>
+              </section>
+            </aside>
+          </div>
+        </div>
+
+        <div class="tt-progress" id="tt-progress" hidden aria-hidden="true">
+          <div class="tt-progress-bar" id="tt-progress-bar"></div>
+        </div>
+
+        <article id="tt-view-detail" class="tt-article-detail" hidden></article>
+      </div>
+    </main>
+
+    <button id="nutLenDauTrang" class="nut-len-dau-trang" title="Lên đầu trang">
+      ⬆
+    </button>
+
+    <footer class="chan-trang">
+      <div class="chan-trang-tren">
+        <div class="khung-chan-trang">
+          <div class="dang-ky-email">
+            <h3><i class="fa-solid fa-gift"></i> Nhận Ngay Voucher 50K</h3>
+            <p>Đăng ký email để nhận tin khuyến mãi sớm nhất</p>
+            <form class="form-dang-ky" id="form-dang-ky" novalidate>
+              <input
+                type="email"
+                id="email-dang-ky"
+                name="email"
+                placeholder="Nhập email của bạn..."
+                autocomplete="email"
+                aria-describedby="thong-bao-email"
+              />
+              <button type="submit">Đăng ký</button>
+              <p class="thong-bao-form" id="thong-bao-email" role="alert" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <div class="tra-cuu-don">
+            <h3><i class="fa-solid fa-truck-fast"></i> Tra Cứu Đơn Hàng</h3>
+            <p>Kiểm tra trạng thái vận chuyển nhanh chóng</p>
+            <form class="form-tra-cuu" id="form-tra-cuu" novalidate>
+              <input
+                type="tel"
+                id="sdt-tra-cuu"
+                name="sdt"
+                inputmode="numeric"
+                placeholder="Nhập Số điện thoại mua hàng..."
+                autocomplete="tel"
+                aria-describedby="thong-bao-sdt"
+              />
+              <button type="submit">Kiểm tra</button>
+              <p class="thong-bao-form" id="thong-bao-sdt" role="alert" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="chan-trang-chinh">
+        <div class="khung-chan-trang">
+          <div class="cot-chan-trang brand-col">
+            <h2 class="logo-chan-trang">N1 MOBILE</h2>
+            <p>Hệ thống bán lẻ điện thoại và phụ kiện công nghệ chính hãng hàng đầu.</p>
+            <div class="huy-hieu-uy-tin">
+              <span><i class="fa-solid fa-shield-halved"></i> 100% Chính hãng</span>
+              <span><i class="fa-solid fa-rotate-left"></i> 1 đổi 1 trong 30 ngày</span>
+            </div>
+          </div>
+          
+          <div class="cot-chan-trang">
+            <h4>Sản Phẩm</h4>
+            <ul>
+              <li><a href="danhmuc.html?cat=dienthoai&hang=Apple">iPhone / Apple</a></li>
+              <li><a href="danhmuc.html?cat=dienthoai&hang=Samsung">Samsung Galaxy</a></li>
+              <li><a href="danhmuc.html?cat=dienthoai&hang=Xiaomi">Xiaomi / Redmi</a></li>
+              <li><a href="danhmuc.html?cat=dienthoai&hang=Vivo">Vivo</a></li>
+              <li><a href="danhmuc.html?cat=dienthoai&hang=OPPO">OPPO</a></li>
+              <li><a href="danhmuc.html?cat=phukien">Phụ kiện chính hãng</a></li>
+            </ul>
+          </div>
+
+          <div class="cot-chan-trang">
+            <h4>Chính Sách</h4>
+            <ul>
+              <li><a href="taikhoan.html#bao-hanh">Chính sách bảo hành</a></li>
+              <li><a href="taikhoan.html#doi-tra">Chính sách đổi trả</a></li>
+              <li><a href="taikhoan.html#giao-hang-thanh-toan">Giao hàng & Thanh toán</a></li>
+              <li><a href="taikhoan.html#tra-gop">Trả góp 0% lãi suất</a></li>
+            </ul>
+          </div>
+
+          <div class="cot-chan-trang">
+            <h4>Tổng Đài Hỗ Trợ</h4>
+            <p class="duong-day-nong">1922 6789 (8:00 - 21:30)</p>
+            <p>Email: cskh@n1mobile.com</p>
+            <div class="lien-ket-mxh">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chan-trang-duoi">
+        <div class="khung-chan-trang">
+          <p>© 2026 N1 Mobile. Tất cả quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="nguoidung.js"></script>
+    <script src="tintuc.js"></script>
+  </body>
+</html>
