@@ -1202,8 +1202,8 @@ a.xem-them {
 
 .duong-ray-voucher {
   display: flex;
-  align-items: center;
   transition: transform 0.5s ease-in-out;
+  height: 350px;
 }
 
 .slide-voucher {
@@ -1214,10 +1214,9 @@ a.xem-them {
 
 .slide-voucher img {
   width: 100%;
-  height: auto;
-  max-height: 350px;
+  height: 350px;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .nut-vc {
@@ -2350,8 +2349,12 @@ input {
     max-width: none;
   }
 
+  .duong-ray-voucher {
+    height: 230px;
+  }
+
   .slide-voucher img {
-    max-height: 230px;
+    height: 230px;
   }
 
   .anh-gif-voucher img {
