@@ -315,22 +315,6 @@
   color: #e53935;
 }
 
-.lien-ket-tiep-tuc {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 16px;
-  color: var(--text-sub);
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-
-.lien-ket-tiep-tuc:hover {
-  color: #e53935;
-}
-
 .gio-trong {
   text-align: center;
   padding: 60px 20px;
